@@ -1,0 +1,40 @@
+
+.root{
+
+}
+body{
+    background-color: rgba(0, 0, 0, 0.542);
+    
+}
+
+.titulos{
+    color: white;
+    text-align: center;
+}
+main{
+    display: flex;
+}
+.indice-Secciones{
+    font-size: 0.8em;
+    
+}
+.indice-Secciones li{
+    font: 0.95em;
+}
+:any-link{
+    transition: 1.2s;
+
+    text-decoration: none;
+    background: linear-gradient();
+    
+}
+.jedi a:hover{
+  color: rgb(0, 255, 255);
+}
+.sith a:hover{
+    color: red;
+}
+
+#final{
+    text-align: center;
+}
