@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('./Fonts/Starjedi.ttf') format('truetype');
+}
+@font-face{
+
+    font-family: 'Star Jout';
+    src: url('./Fonts/Starjout.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Star Jhol';
+    src: url('./Fonts/Starjhol.ttf') format('truetype');   
+}
+@font-face{ 
+    font-family: 'Star Dise';
+    src: url('./Fonts/STJEDISE.TTF') format('truetype');
+}
+
+:root{
+    /*COLORES*/
+    --color-titulos: rgb(255, 189, 21) ;
+    --color-border:rgba(255, 189, 21, 0.527) ;
+    --color-fondos: rgba(255, 189, 21, 0.274) ;
+    --fondo-indice-jedi: rgba(0, 217, 255, 0.377) ;
+    --fondo-indice-sith: rgba(59, 3, 3, 0.692);
+    --fondo-textos: rgba(0, 0, 0, 0.856);
+
+    /*FUENTES*/
+    --fuente-titulos: 'Star Jhol';
+
+}
+body{
+    background-image: url('./Fondos/fondo_estrellado.png');
+    margin: 1%;
+    color:var(--color-titulos);
+}
+header{
+    height: 180px;
+}
+header h1{
+    color:var(--color-titulos);
+    text-align: center;
+    font-family:var(--fuente-titulos);
+    font-size: 600%;
+    background-color: var(--color-fondos);
+    width:45%;
+    margin: 0 auto;
+}
+
+.dividir-indice{ 
+    display:flex;
+    gap:2%;
+    color: var(--color-titulos);
+}
+.indice{
+    font-size: 80%;
+    width:20%;
+    background-color: var(--color-fondos);
+    padding: 1%;
+}
+.indice:has(jedi , sith){
+
+}
+.indice :any-link{
+    color:inherit;
+    transition: 1.5s;
+    text-decoration: none;
+}
+.indice li:hover{
+    transition: 1.5s;
+    transform: scale(1.1)
+}
+li.jedi:hover{
+    transition: 1.5s;
+    background-color: var(--fondo-indice-jedi);
+
+
+}
+li.sith:hover{
+    transition: 1.5s;
+    background-color: var(--fondo-indice-sith);
+
+}
+
+.jedi a:hover{
+  color: rgb(0, 255, 255);
+
+}
+.sith a:hover{
+    color: red;
+}
+.indice ul{ /*Quitar viñeta a todas las listas uly una pequeña separación */
+    list-style-type: none;
+    padding:0;
+}
+ul ul li{
+    padding-left: 5%; /*Dar separación a las li anidadas */
+}
+ul>li{ /*Darle borde a las li */
+    border: 1px solid var(--color-titulos);
+    background-color:var(--fondo-textos);
+}
+.jedi ul:hover{
+    box-shadow: 0px 0px 6px 10px rgba(245, 245, 245, 0.5); /* Sombra blanca claro al pasar el cursor */
+}
+.jedi ul li:hover {
+    box-shadow: 0px 0px 6px 6px rgba(245, 245, 245, 0.473); /* Sombra blanca claro al pasar el cursor */
+}
+.sith ul:hover{
+    box-shadow: 0px 0px 6px 10px rgb(58, 1, 1); /* Sombra roja claro al pasar el cursor */
+}
+.sith ul li:hover {
+    box-shadow: 0px 0px 6px 10px rgb(58, 1, 1); /* Sombra roja claro al pasar el cursor */
+}
+
+li.jedi>ul>li:hover{ /*Darle fondo a los li de jedi cuando pasa el cursos*/
+    transition: 1.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: scale(1.1)
+    
+}
+li.sith>ul>li:hover{
+    transition: 1.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: scale(1.1)
+}
+#indice-uno:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_1.png);
+
+}
+#indice-dos:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_2.png);
+}
+#indice-tres:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_3.png);
+}
+#indice-cuatro:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_4.png);
+}
+#indice-cinco:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_5.png);
+}
+#indice-seis:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_6.png);
+}
+#indice-siete:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_7.png);
+}
+#indice-ocho:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_8.png);
+}
+#indice-nueve:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_9.png);
+}
+#indice-diez:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_10.png);
+}
+#indice-once:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_11.png);
+}
+#indice-doce:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_12.png);
+}
+#indice-trece:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_13.png);
+}
+#indice-catorce:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_14.png);
+}
+#indice-quince:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_15.png);
+}
+#indice-dieciseis:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/logo_16.png);
+}
+#indice-jedi:hover{
+    transition: 1.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    background-image: url(./Fondos/logo_jedi.png);
+    transform: scale(1.1)
+}
+#indice-sith:hover{
+    transition: 1.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    background-image: url(./Fondos/logo_sith.png);
+    transform: scale(1.1)
+}
+
+.textos{
+    background-color: var(--color-fondos);
+    max-width: 80%;
+
+} 
+
+.texto h3{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.textos p{
+    display: flex ;
+    flex-direction: column; 
+    background-color:var(--fondo-textos);
+    border: 1px solid var(--color-titulos);
+    font-size: 200%;
+    padding: 5%;
+    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ; 
+}
+.p-imagen{
+   font-size: 10px; 
+}
+footer{
+    background-color: antiquewhite;
+    display: inline-flex;
+    justify-content: center;
+    gap: 20%;
+    width: 100%;
+    height: 180px;
+}
