@@ -87,14 +87,14 @@ li.sith:hover{
 .sith a:hover{
     color: red;
 }
-ul{ /*Quitar viñeta a todas las listas uly una pequeña separación */
+.indice ul{ /*Quitar viñeta a todas las listas ul y una pequeña separación */
     list-style-type: none;
     padding: 1%;
 }
-ul ul li{
+.indice ul ul li{
     padding-left: 5%; /*Dar separación a las li anidadas */
 }
-ul>li{ /*Darle borde a las li */
+.indice ul>li{ /*Darle borde a las li */
     border: 1px solid var(--color-titulos);
     background-color:var(--fondo-textos);
 }
@@ -210,9 +210,6 @@ li.sith>ul>li:hover{
     transform: scale(1.1)
 }
 
-
-
-
 .textos{
     background-color: var(--color-fondos);
 } 
@@ -226,19 +223,14 @@ li.sith>ul>li:hover{
     border: 1px solid var(--color-titulos);
     font-size: 200%;
     padding: 5%;
-    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ;
-    
+    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ;  
 }
-#fuerza-solo{
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    
+.textos ul{
+    background-color: var(--fondo-textos);
+    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ;  
 }
-.textos p #fuerza-solo{
-    text-align: center;
-    justify-content: center;
-    text-align: center;
-
+.valores-jedi ul{
+    list-style: circle;
 }
 #final{
     background-color: antiquewhite;

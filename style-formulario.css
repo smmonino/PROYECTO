@@ -29,12 +29,7 @@
     --fuente-titulos: 'Star Jhol';
 
 }
-body{
-    background-image: url('./Fondos/fondo_estrellado.png');
-    margin: 1%;
-    color:var(--color-titulos);
-}
-h1{
+header h1{
 
     color:var(--color-titulos);
     text-align: center;
@@ -45,202 +40,109 @@ h1{
     margin: 0 auto;
 
 }
-#galaxia{
+#cuentanos{
     color: var(--color-titulos);
     text-align: center;
-    font-size: 800%;
+    font-size: 600%;
     border: 1px solid var(--color-titulos);
 }
-.dividir-indice{ 
-    display:flex;
-    gap:10%;
-    color: var(--color-titulos);
+body{
+    background-image: url('./Fondos/fondo_estrellado.png');
+    margin: 1%;
+    color:var(--color-titulos);
+    text-align: center;
 }
 
-
-.indice{
-    font-size: 100%;
-    width:100%;
-    background-color: var(--color-fondos);
+.cuerpo{
+    background-color: var(--color-titulos);
 }
-.indice :any-link{
-    color:inherit;
-    transition: 1.5s;
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 10%;
+}
+#enviar:hover{
+    transition: 1s;
+    transform: scale(1.5);
+    box-shadow: 0px 0px 5px 5px rgb(0, 184, 49);
+}
+#borrar:hover{
+    transition: 1s;
+    transform: scale(1.5);
+    box-shadow: 0px 0px 5px 5px rgb(83, 1, 18);
+}
+.vuelta{
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+
+}
+.vuelta :any-link{
     text-decoration: none;
 }
-li.jedi:hover{
-    transition: 1.5s;
-    background-color: var(--fondo-indice-jedi);
-    transform: scale(1.1)
-
+.vuelta a:visited{
+    color: inherit;
 }
-li.sith:hover{
-    transition: 1.5s;
-    background-color: var(--fondo-indice-sith);
-    transform: scale(1.1)
-}
-
-.jedi a:hover{
-  color: rgb(0, 255, 255);
-
-}
-.sith a:hover{
-    color: red;
-}
-ul{ /*Quitar viñeta a todas las listas uly una pequeña separación */
-    list-style-type: none;
+.vuelta a{
+    border: 2px solid var(--color-titulos);
+    width: 10%;
     padding: 1%;
 }
-ul ul li{
-    padding-left: 5%; /*Dar separación a las li anidadas */
-}
-ul>li{ /*Darle borde a las li */
-    border: 1px solid var(--color-titulos);
-    background-color:var(--fondo-textos);
-}
-.jedi ul:hover{
-    box-shadow: 0px 0px 6px 10px rgba(245, 245, 245, 0.5); /* Sombra blanca claro al pasar el cursor */
-}
-.jedi ul li:hover {
-    box-shadow: 0px 0px 6px 6px rgba(245, 245, 245, 0.473); /* Sombra blanca claro al pasar el cursor */
-}
-.sith ul:hover{
-    box-shadow: 0px 0px 6px 10px rgb(58, 1, 1); /* Sombra roja claro al pasar el cursor */
-}
-.sith ul li:hover {
-    box-shadow: 0px 0px 6px 10px rgb(58, 1, 1); /* Sombra roja claro al pasar el cursor */
-}
-
-li.jedi>ul>li:hover{ /*Darle fondo a los li de jedi cuando pasa el cursos*/
+.vuelta a:hover{
     transition: 1.5s;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    transform: scale(1.1)
-    
+    transform: scale(1.5);
 }
-li.sith>ul>li:hover{
-    transition: 1.5s;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    transform: scale(1.1)
-}
-#indice-uno:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_1.png);
-
-}
-#indice-dos:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_2.png);
-}
-#indice-tres:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_3.png);
-}
-#indice-cuatro:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_4.png);
-}
-#indice-cinco:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_5.png);
-}
-#indice-seis:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_6.png);
-}
-#indice-siete:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_7.png);
-}
-#indice-ocho:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_8.png);
-}
-#indice-nueve:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_9.png);
-}
-#indice-diez:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_10.png);
-}
-#indice-once:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_11.png);
-}
-#indice-doce:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_12.png);
-}
-#indice-trece:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_13.png);
-}
-#indice-catorce:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_14.png);
-}
-#indice-quince:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_15.png);
-}
-#indice-dieciseis:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/logo_16.png);
-}
-#indice-jedi:hover{
-    transition: 1.5s;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    
-    background-image: url(./Fondos/logo_jedi.png);
-    transform: scale(1.1)
-}
-#indice-sith:hover{
-    transition: 1.5s;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    
-    background-image: url(./Fondos/logo_sith.png);
-    transform: scale(1.1)
-}
-
-
-
-
-.textos{
-    background-color: var(--color-fondos);
-} 
-.textos h2{
-    text-align: center;
-}
-.textos p{
-    display: flex ;
-    flex-direction: column; 
-    background-color:var(--fondo-textos);
-    border: 1px solid var(--color-titulos);
+#regresar{
     font-size: 200%;
-    padding: 5%;
-    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ;
-    
+    border: 2px solid var(--color-titulos);
 }
-#fuerza-solo{
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    
+#inicio{
+    background-image: url(./Imagenes/ANAK_PEQ.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
 }
-.textos p #fuerza-solo{
-    text-align: center;
-    justify-content: center;
-    text-align: center;
-
+#contenido{
+        background-image: url(./Imagenes/YODA.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: left;
 }
-#final{
+#jedi{
+    background-image: url(./Imagenes/obi-wan_ojos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+#sith{
+    background-image: url(./Imagenes/anakin_ojo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+:is(#inicio,#contenido):hover{
+    transition: 1.5s;
+    box-shadow: 0px 0px 5px 10px whitesmoke;
+}
+#jedi:hover{
+    transition: 1.5s;
+    box-shadow:0px 0px 5px 8px var(--fondo-indice-jedi) ;
+}
+#sith:hover{
+    transition: 1.5s;
+    box-shadow: 0px 0px 5px 10px var(--fondo-indice-sith);
+}
+input{
+    background-color: antiquewhite;
+}
+input:focus:valid{
+    background-color: rgb(0, 255, 89);
+}
+input:focus:invalid{
+    background-color: rgb(59, 3, 3);
+}
+footer{
     background-color: antiquewhite;
     display: flex;
     justify-content: center;
