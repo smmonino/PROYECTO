@@ -11,6 +11,10 @@ body{
     color: white;
     text-align: center;
 }
+#sable_titulo{
+    width: 13em;
+    
+}
 main{
     display: flex;
 }
@@ -22,11 +26,14 @@ main{
     font: 0.95em;
 }
 :any-link{
+    color:inherit;
     transition: 1.2s;
-
     text-decoration: none;
-    background: linear-gradient();
+
     
+}
+:visited{
+    color:inherit;
 }
 .jedi a:hover{
   color: rgb(0, 255, 255);
