@@ -12,18 +12,13 @@
                 <p id="cuentanos">"Cuéntanos..."</p>
 
         </header>
-        <form action="" method="">
-            <p>ELIGE BANDO...<input list="LADO"/>
-                <datalist id="LADO">
-                    <option value="LUMINOSO">LUMINOSO</option>
-                    <option value="OSCURO">OSCURO</option>
-                </datalist>
-            </p>
-            <p>NOMBRE DEL JEDI/SITH<input type="text" name="Nombre" placeholder="Nombre" max="30" min="2" required pattern="[A-Z a-z]" /></p>
-            <p>APELLIDOS<input type="text" name="Apellidos" placeholder="Apellidos" max="50" min="2" required pattern="[A-Z a-z]" /></p>
-            <p>NÚMERO DE HOLOCOMUNICADOR<input type="tel" name="Holocomunicador" placeholder="Holocomunicador" max="30" pattern="[0-9]"/></p>
-            <p>PLANETA DE ORIGEN(País)<input type="text" name="País" placeholder="Planeta" max="30" min="2" pattern="[A-Z a-z]"/> </p>
-            <p>QUÉ NOS TIENES QUE DECIR...<textarea type="textarea" name="Sugerencias" placeholder="Sugerencias..." cols="80" rows="5"></textarea></p>
+        <form class="formulario" action="" method="">
+
+            <p id="nombe">NOMBRE DEL JEDI/SITH<input type="text" name="Nombre" placeholder="Nombre" max="30" min="2" required pattern="[A-Za-z\s]+" /></p>
+            <p id="apellidos">APELLIDOS<input type="text" name="Apellidos" placeholder="Apellidos" max="50" min="2" required pattern="[A-Za-z\s]+" /></p>
+            <p id="numero">NÚMERO DE HOLOCOMUNICADOR<input type="tel" name="Holocomunicador" placeholder="Holocomunicador" max="30" pattern="[0-9]"/></p>
+            <p id="origen">PLANETA DE ORIGEN(País)<input type="text" name="País" placeholder="Planeta" max="30" min="2" pattern="[A-Z a-z]"/> </p>
+            <p id="sugerencia">QUÉ NOS TIENES QUE DECIR...<textarea type="textarea" name="Sugerencias" placeholder="Sugerencias..." cols="70" rows="5"></textarea></p>
             <div class="botones">
                 <p><input id="enviar" type="submit" value="Transportar los datos al hiperespacio"/></p>
                 <p><input id="borrar" type="reset" value="Deshacer la ruta del hiperespacio"/></p>
@@ -31,16 +26,15 @@
         </form> 
         <p id="regresar">Regresa a...</p>
         <div class="vuelta">
-            <a id="inicio" href="./index.html">INICIO</a> 
-            <a id="contenido" href="./contenido.html">CONTENIDO</a> 
-            <a id="jedi" href="./jedi.html">JEDI</a> 
-            <a id="sith" href="./sith.html">SITH</a>
+            <a id="inicio" href="./index.html" target="_blank">INICIO</a> 
+            <a id="contenido" href="./contenido.html" target="_blank">CONTENIDO</a> 
+            <a id="jedi" href="./jedi.html" target="_blank">JEDI</a> 
+            <a id="sith" href="./sith.html" target="_blank">SITH</a>
         </div>
         
         <footer>
-            <p>SOBRE NOSOTROS</p>
+            <p>IES ALBARREGAS</p>
             <p>PROYECTO 2024</p>
-            <p><a href="">CONTÁCTANOS</a></p>
         </footer>
            
     </body>

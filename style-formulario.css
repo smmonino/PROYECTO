@@ -35,7 +35,7 @@ header h1{
     text-align: center;
     font-family:var(--fuente-titulos);
     font-size: 600%;
-    background-color: var(--color-fondos);
+    background-color: rgba(0, 0, 0, 0.351);
     width:45%;
     margin: 0 auto;
 
@@ -50,17 +50,32 @@ body{
     background-image: url('./Fondos/fondo_estrellado.png');
     margin: 1%;
     color:var(--color-titulos);
-    text-align: center;
+    
+}
+.formulario{
+    border: 2px solid var(--color-titulos);
+    background-color: var(--color-fondos);
+    align-items: center;
+    flex-direction: column;
+
+ 
+}
+.formulario p{
+    border: 2px solid var(--color-titulos);
+    background-color: var(--fondo-textos);
+    display:block;
+    align-items: center;
+    padding:1%;
+    max-width: 80%;
+
+
 }
 
-.cuerpo{
-    background-color: var(--color-titulos);
-}
 .botones{
     display: flex;
     justify-content: center;
     gap: 5%;
-    padding: 10%;
+    padding: 8%;
 }
 #enviar:hover{
     transition: 1s;
@@ -76,6 +91,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 8%;
+    margin-bottom: 5%;
 
 }
 .vuelta :any-link{
@@ -96,6 +112,7 @@ body{
 #regresar{
     font-size: 200%;
     border: 2px solid var(--color-titulos);
+
 }
 #inicio{
     background-image: url(./Imagenes/ANAK_PEQ.png);
@@ -142,11 +159,28 @@ input:focus:valid{
 input:focus:invalid{
     background-color: rgb(59, 3, 3);
 }
+#regresa{
+    text-align: center;
+}
+
 footer{
-    background-color: antiquewhite;
+    background-color: rgba(236, 212, 133, 0.349);
     display: flex;
-    justify-content: center;
-    gap: 20%;
+    justify-content: space-evenly;
     width: 100%;
     height: 80px;
+    align-items: center;
+    
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid;
+    padding: 5%;
+    transition: 2s;
+    font-size: 150%;
+    
+}
+footer a:hover{
+    background-color: var(--fondo-textos);
 }

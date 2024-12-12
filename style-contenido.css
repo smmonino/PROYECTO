@@ -28,6 +28,7 @@
     /*FUENTES*/
     --fuente-titulos: 'Star Jhol';
 
+
 }
 body{
     background-image: url('./Fondos/fondo_estrellado.png');
@@ -38,29 +39,29 @@ header{
     height: 180px;
 }
 header h1{
+
     color:var(--color-titulos);
     text-align: center;
     font-family:var(--fuente-titulos);
     font-size: 600%;
-    background-color: var(--color-fondos);
+    background-color: rgba(0, 0, 0, 0.351);
     width:45%;
     margin: 0 auto;
+
 }
 
 .dividir-indice{ 
     display:flex;
-    gap:2%;
+    gap:3%;
     color: var(--color-titulos);
 }
 .indice{
     font-size: 80%;
     width:20%;
     background-color: var(--color-fondos);
-    padding: 1%;
+    margin: 2%;
 }
-.indice:has(jedi , sith){
 
-}
 .indice :any-link{
     color:inherit;
     transition: 1.5s;
@@ -199,7 +200,7 @@ li.sith>ul>li:hover{
     background-repeat: no-repeat;
     background-position: right;
     
-    background-image: url(./Fondos/logo_jedi.png);
+    background-image: url(./Fondos/logo_jedi_blanco.png);
     transform: scale(1.1)
 }
 #indice-sith:hover{
@@ -208,20 +209,30 @@ li.sith>ul>li:hover{
     background-repeat: no-repeat;
     background-position: right;
     
-    background-image: url(./Fondos/logo_sith.png);
+    background-image: url(./Fondos/logo_sith_blanco.png);
+    transform: scale(1.1)
+}
+#indice-wiki:hover{
+    transition: 1.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(./Imagenes/wiki.png);
     transform: scale(1.1)
 }
 
 .textos{
     background-color: var(--color-fondos);
     max-width: 80%;
-
+    margin-right: 2%;
 } 
 
-.texto h3{
+.textos h3{
+
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    font-size: 200%;
 }
 .textos p{
     display: flex ;
@@ -231,15 +242,32 @@ li.sith>ul>li:hover{
     font-size: 200%;
     padding: 5%;
     box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ; 
+    margin: 20px
 }
-.p-imagen{
-   font-size: 10px; 
+.textos p:has(img){
+   font-size: 80%; 
+   text-align: right;
+   font-style: italic;
 }
 footer{
-    background-color: antiquewhite;
-    display: inline-flex;
-    justify-content: center;
-    gap: 20%;
+    background-color: rgba(236, 212, 133, 0.349);
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    height: 180px;
+    height: 80px;
+    align-items: center;
+    
+
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid;
+    padding: 5%;
+    transition: 2s;
+    font-size: 150%;
+    
+}
+footer a:hover{
+    background-color: var(--fondo-textos);
 }
