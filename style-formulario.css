@@ -55,20 +55,18 @@ body{
 .formulario{
     border: 2px solid var(--color-titulos);
     background-color: var(--color-fondos);
-    align-items: center;
-    flex-direction: column;
 
- 
+}
+.contenedor-formulario{
+    display: flex;
 }
 .formulario p{
     border: 2px solid var(--color-titulos);
     background-color: var(--fondo-textos);
-    display:block;
-    align-items: center;
     padding:1%;
-    max-width: 80%;
-
-
+    max-width: 90%;
+    margin-left: 3%;
+    
 }
 
 .botones{
@@ -77,15 +75,24 @@ body{
     gap: 5%;
     padding: 8%;
 }
+#enviar{
+    background-color: rgba(0, 255, 255, 0.477);
+}
+#borrar{
+    background-color:rgb(83, 1, 18);
+}
 #enviar:hover{
     transition: 1s;
     transform: scale(1.5);
     box-shadow: 0px 0px 5px 5px rgb(0, 184, 49);
+    background-color: rgba(0, 255, 255, 0.842);
+    color: aliceblue;
 }
 #borrar:hover{
     transition: 1s;
     transform: scale(1.5);
     box-shadow: 0px 0px 5px 5px rgb(83, 1, 18);
+    color: aliceblue;
 }
 .vuelta{
     display: flex;
