@@ -45,7 +45,6 @@ header h1{
     margin: 0 auto;
 
 }
-
 #galaxia{
     color: var(--color-titulos);
     text-align: center;
@@ -93,14 +92,14 @@ li.sith:hover{
 .sith a:hover{
     color: red;
 }
-ul{ /*Quitar viñeta a todas las listas uly una pequeña separación */
+.indice ul{ /*Quitar viñeta a todas las listas ul y una pequeña separación */
     list-style-type: none;
     padding: 1%;
 }
-ul ul li{
+.indice ul ul li{
     padding-left: 5%; /*Dar separación a las li anidadas */
 }
-ul>li{ /*Darle borde a las li */
+.indice ul>li{ /*Darle borde a las li */
     border: 1px solid var(--color-titulos);
     background-color:var(--fondo-textos);
 }
@@ -131,10 +130,6 @@ li.sith>ul>li:hover{
     background-repeat: no-repeat;
     background-position: right;
     transform: scale(1.1)
-}
-#indice-acolyte:hover{
-    transition: 1.5s;
-    background-image: url(./Fondos/acolyte_logo.png);
 }
 #indice-uno:hover{
     transition: 1.5s;
@@ -214,10 +209,10 @@ li.sith>ul>li:hover{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+    
     background-image: url(./Fondos/logo_sith_blanco.png);
     transform: scale(1.1)
 }
-
 #indice-wiki:hover{
     transition: 1.5s;
     background-size: contain;
@@ -230,6 +225,7 @@ li.sith>ul>li:hover{
 .textos{
     background-color: var(--color-fondos);
     margin-right: 2%;
+    
 } 
 .textos h2{
     text-align: center;
@@ -241,28 +237,25 @@ li.sith>ul>li:hover{
     border: 1px solid var(--color-titulos);
     font-size: 200%;
     padding: 5%;
-    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ;
-    margin: 20px
+    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ;  
+    margin: 20px;
 }
-#fuerza-solo{
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.textos ul{
+    background-color: var(--fondo-textos);
+    box-shadow:0px 0px 10px 10px rgba(245, 245, 245, 0.5) ;  
+}
+.volver a:hover {
     
 }
-.textos p #fuerza-solo{
-    text-align: center;
-    justify-content: center;
-    text-align: center;
 
-}
+
 footer{
     background-color: rgba(236, 212, 133, 0.349);
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: 80px;
-    align-items: center;
-    
+    align-items: center; 
 
 }
 footer a{
@@ -277,4 +270,3 @@ footer a{
 footer a:hover{
     background-color: var(--fondo-textos);
 }
-

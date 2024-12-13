@@ -129,6 +129,10 @@ li.sith>ul>li:hover{
     background-position: right;
     transform: scale(1.1)
 }
+#indice-acolyte:hover{
+    transition: 1.5s;
+    background-image: url(./Fondos/acolyte_logo.png);
+}
 #indice-uno:hover{
     transition: 1.5s;
     background-image: url(./Fondos/logo_1.png);
